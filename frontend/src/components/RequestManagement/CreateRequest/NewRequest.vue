@@ -20,7 +20,7 @@
               invalidInput: invalidCredit,
             }"
           />
-          <label for="newRequest__credit">Ask for (ETH)</label>
+          <label for="newRequest__credit">Ask for (FRA)</label>
         </div>
         <div class="input-group newRequest__payback">
           <input
@@ -35,7 +35,7 @@
               invalidInput: invalidPayback,
             }"
           />
-          <label for="newRequest__payback">Payback (ETH)</label>
+          <label for="newRequest__payback">Payback (FRA)</label>
         </div>
       </div>
       <div class="input-group newRequest__description">

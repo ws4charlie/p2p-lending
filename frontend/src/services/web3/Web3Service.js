@@ -101,6 +101,9 @@ const NETWORKS = {
   '3': 'Ropsten',
   '4': 'Rinkeby',
   '42': 'Kovan',
+  //'523': 'findora',
   '4447': 'Truffle',
   '5777': 'localhost',
 }
+
+//export const APPROVED_NETWORK_ID = "523";

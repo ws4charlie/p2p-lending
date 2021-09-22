@@ -46,7 +46,7 @@ export const RequestManagementService = {
         }
 
         if (request.lent) {
-          request.status = 'Ether Lent'
+          request.status = 'FRA Lent'
         }
 
         if (request.withdrawnByAsker) {

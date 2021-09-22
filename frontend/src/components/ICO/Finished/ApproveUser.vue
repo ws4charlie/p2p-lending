@@ -16,7 +16,7 @@
           invalidInput: invalidAmount,
         }"
       />
-      <label for="approveUser__amount">TrustToken (TT)</label>
+      <label for="approveUser__amount">TrustToken (TST)</label>
     </div>
     <div class="input-group approveUser__targetInput">
       <input

@@ -1,12 +1,15 @@
 const HDWalletProvider = require("truffle-hdwallet-provider");
 const INFURA_API_KEY = process.env.INFURA_API_KEY;
-const MNEMONIC = process.env.MNEMONIC;
-const ropstenProvider = MNEMONIC
-    ? new HDWalletProvider(
-          MNEMONIC,
-          `https://ropsten.infura.io/v3/${INFURA_API_KEY}`
-      )
-    : null;
+//const MNEMONIC = "zebra paddle unveil toilet weekend space gorilla lesson relief useless arrive picture";
+//const MNEMONIC = "citizen hint animal brain label grab hurt prison myth stem load wait";
+// const ropstenProvider = MNEMONIC
+//     ? new HDWalletProvider(
+//           MNEMONIC,
+//           `https://ropsten.infura.io/v3/${INFURA_API_KEY}`
+//       )
+//     : null;
+
+const mnemonic = "citizen hint animal brain label grab hurt prison myth stem load wait";
 
 module.exports = {
     /**
@@ -29,15 +32,22 @@ module.exports = {
         development: {
             host: "127.0.0.1", // Localhost (default: none)
             port: 8545, // Standard Ethereum port (default: none)
-            network_id: "*" // Any network (default: none)
-        },
-        ropsten: {
-            provider: ropstenProvider,
+            network_id: 523, // Any network (default: none)
             gas: 8000000,
-            gasPrice: 30000000000,
-            from: "0x9D20420646c708Eb17bA18E281565DC1DeA7E71B",
-            network_id: 3,
-            skipDryRun: false
+            gasPrice: 700000000000,
+            from: "0xF6aca39539374993B37d29cCf0D93fA214eA0AF1",
+            disableConfirmationListener: true
+        },
+        findora: {
+            //host: "https://dev-evm.dev.findora.org",
+            //port: 8545,
+            provider: () => new HDWalletProvider(mnemonic,
+                'https://dev-evm.dev.findora.org:8545/'
+            ),
+            network_id: 523,
+            gas: 9000000,
+            gasPrice: 1000000000000, // 1000 gwei
+            from: "0xA5225cBEE5052100Ec2D2D94aA6d258558073757",
         }
     },
 

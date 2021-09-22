@@ -58,7 +58,7 @@ export default {
             'ether'
           )
 
-          const description = 'Change Contract Fee to ' + fee + ' ETH'
+          const description = 'Change Contract Fee to ' + fee + ' FRA'
           const proposal = {
             address: element.proposalAddress,
             description: description,

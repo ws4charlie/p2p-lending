@@ -29,7 +29,7 @@
             invalidInput: invalidAmount,
           }"
         />
-        <label for="sendToken__amount">TrustToken (TT)</label>
+        <label for="sendToken__amount">TrustToken (TST)</label>
       </div>
     </div>
     <div class="sendToken__addressInputs">

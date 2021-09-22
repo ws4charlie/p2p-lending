@@ -11,21 +11,21 @@
       <img src="../../assets/token.svg" class="icoInfo__icon" />
       <div class="icoInfo__info">
         <p class="icoInfo__info-title">Your Token Balance</p>
-        <p class="icoInfo__info-count">{{ userTokenBalance }} TT</p>
+        <p class="icoInfo__info-count">{{ userTokenBalance }} TST</p>
       </div>
     </div>
     <div class="icoInfo__wrapper" v-if="active">
       <img src="../../assets/token.svg" class="icoInfo__icon" />
       <div class="icoInfo__info">
         <p class="icoInfo__info-title">Token Available</p>
-        <p class="icoInfo__info-count">{{ tokenSupply }} TT</p>
+        <p class="icoInfo__info-count">{{ tokenSupply }} TST</p>
       </div>
     </div>
     <div class="icoInfo__wrapper" v-else>
       <img src="../../assets/contract.svg" class="icoInfo__icon" />
       <div class="icoInfo__info">
         <p class="icoInfo__info-title">Contract Balance</p>
-        <p class="icoInfo__info-count">{{ contractBalance }} ETH</p>
+        <p class="icoInfo__info-count">{{ contractBalance }} FRA</p>
       </div>
     </div>
     <div class="icoInfo__wrapper">
@@ -35,7 +35,7 @@
       />
       <div class="icoInfo__info">
         <p class="icoInfo__info-title">You invested</p>
-        <p class="icoInfo__info-count">{{ userInvestment }} ETH</p>
+        <p class="icoInfo__info-count">{{ userInvestment }} FRA</p>
       </div>
     </div>
   </div>

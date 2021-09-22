@@ -11,7 +11,7 @@
         v-model="amount"
         v-bind:class="{ hasContent: amount.length > 0, invalidInput: error }"
       />
-      <label for="invest__amount">Amount to Invest (ETH)</label>
+      <label for="invest__amount">Amount to Invest (FRA)</label>
     </div>
     <div class="icoInvest__button btn btn--form" @click="submit">Buy</div>
   </div>

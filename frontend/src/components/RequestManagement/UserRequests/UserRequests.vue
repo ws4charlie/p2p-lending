@@ -21,8 +21,8 @@
           >
             <td class="table__data table__data--id">{{ index + 1 }}</td>
             <td class="table__data table__data--purpose">{{ item.purpose }}</td>
-            <td class="table__data">{{ item.askAmount }} ETH</td>
-            <td class="table__data">{{ item.paybackAmount }} ETH</td>
+            <td class="table__data">{{ item.askAmount }} FRA</td>
+            <td class="table__data">{{ item.paybackAmount }} FRA</td>
             <td class="table__data">{{ item.status }}</td>
             <td class="table__data">
               <div
@@ -34,7 +34,7 @@
               <div
                 class="btn btn--table"
                 @click="withdraw(item.address)"
-                v-if="item.isLender && item.status === 'Ether Lent'"
+                v-if="item.isLender && item.status === 'FRA Lent'"
                 >Cancel</div
               >
               <div
@@ -42,7 +42,7 @@
                 @click="withdraw(item.address)"
                 v-if="
                   (item.isLender && item.status === 'PaidBack') ||
-                    (item.isAsker && item.status === 'Ether Lent')
+                    (item.isAsker && item.status === 'FRA Lent')
                 "
                 >Withdraw</div
               >
@@ -56,10 +56,10 @@
                 v-if="
                   (item.isLender &&
                     item.status !== 'PaidBack' &&
-                    item.status !== 'Ether Lent') ||
+                    item.status !== 'FRA Lent') ||
                     (item.isAsker &&
                       item.status !== 'Withdrawn' &&
-                      item.status !== 'Ether Lent' &&
+                      item.status !== 'FRA Lent' &&
                       item.status !== 'Waiting')
                 "
                 >n/a</div

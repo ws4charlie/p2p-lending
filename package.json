@@ -18,6 +18,7 @@
     "test": "truffle test",
     "migrate": "npm run migrate:ropsten",
     "migrate:dev": "rm -rf build/ && truffle migrate --reset --compile-all --network development",
+    "migrate:devnet": "rm -rf build/ && truffle migrate --reset --compile-all --network findora",
     "migrate:ropsten": "truffle migrate --reset --network ropsten",
     "deploy:app": "cd ./frontend && ./deploy.sh"
   },

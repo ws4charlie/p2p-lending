@@ -1,9 +1,9 @@
 const TrustToken = artifacts.require("TrustToken");
 
-const tokenSupply = 1000;
+const tokenSupply = 1000000000000000;
 const tokenName = "TrustToken";
-const tokenDecimals = 18;
-const tokenSymbol = "TT";
+const tokenDecimals = 6;
+const tokenSymbol = "TST";
 
 module.exports = deployer => {
     deployer.deploy(

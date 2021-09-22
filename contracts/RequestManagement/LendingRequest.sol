@@ -101,16 +101,16 @@ contract LendingRequest {
         if (_origin == asker) {
             require(!debtSettled, "debt settled");
             withdrawnByAsker = true;
-            asker.transfer(address(this).balance);
+            //asker.transfer(address(this).balance);
         } else if (_origin == lender) {
             if (!debtSettled) {
                 require(!withdrawnByAsker, "WithdrawnByAsker");
                 moneyLent = false;
-                lender.transfer(address(this).balance);
+                //lender.transfer(address(this).balance);
                 lender = address(0);
             } else {
                 withdrawnByLender = true;
-                lender.transfer(address(this).balance - contractFee);
+                //lender.transfer(address(this).balance - contractFee);
             }
         } else {
             revert("Error");

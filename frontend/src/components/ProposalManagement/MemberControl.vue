@@ -4,7 +4,7 @@
       <div class="title memberControl__title">Fee Control</div>
       <div class="memberControl__displayFee">
         <span class="memberControl__feeTitle">Contract Fee:</span>
-        <span class="memberControl__fee">{{ contractFee }} ETH</span>
+        <span class="memberControl__fee">{{ contractFee }} FRA</span>
       </div>
       <div class="memberControl__feeInput-wrapper">
         <div class="input-group memberControl__feeInput">
@@ -20,7 +20,7 @@
               invalidInput: invalidFee,
             }"
           />
-          <label for="memberControl__feeInput">New Contract Fee (ETH)</label>
+          <label for="memberControl__feeInput">New Contract Fee (FRA)</label>
         </div>
         <div
           class="memberControl__button btn btn--form"

@@ -38,8 +38,8 @@
           >
             <td class="table__data table__data--id">{{ index + 1 }}</td>
             <td class="table__data table__data--purpose">{{ item.asker }}</td>
-            <td class="table__data">{{ item.askAmount }} ETH</td>
-            <td class="table__data">{{ item.paybackAmount }} ETH</td>
+            <td class="table__data">{{ item.askAmount }} FRA</td>
+            <td class="table__data">{{ item.paybackAmount }} FRA</td>
             <td class="table__data">{{ item.purpose }}</td>
             <td class="table__data">
               <div

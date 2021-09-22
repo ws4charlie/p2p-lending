@@ -1,14 +1,14 @@
 <template>
   <div class="icoProgress card card--icoDetails">
-    <div class="icoProgress__title">Collected Ether</div>
+    <div class="icoProgress__title">Collected FRA</div>
     <div class="icoProgress__details">
       <div class="icoProgress__total">
         <div class="rectangle rectangle--blue"></div>
-        <p class="icoProgress__totalText">Total: {{ contractBalance }} ETH</p>
+        <p class="icoProgress__totalText">Total: {{ contractBalance }} FRA</p>
       </div>
       <div class="icoProgress__goal">
         <div class="rectangle rectangle--gray"></div>
-        <p class="icoProgress__goalText">Goal: {{ goal }} ETH</p>
+        <p class="icoProgress__goalText">Goal: {{ goal }} FRA</p>
       </div>
     </div>
     <div class="ppc" v-bind:class="{ 'gt-50': percent > 50 }">
@@ -21,7 +21,7 @@
           <div class="ppc__percentSign">%</div>
         </div>
         <div class="ppc__etherDetails"
-          >{{ contractBalance }} / {{ goal }} ETH</div
+          >{{ contractBalance }} / {{ goal }} FRA</div
         >
       </div>
     </div>
